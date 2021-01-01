@@ -12,10 +12,10 @@ package dev.yekta.anynum
  * Converts a [Long] to a [String] of Arabic digits.
  * @return a [String] which contains Arabic numerical digits.
  */
-fun Long.toArString(): String = convertNums(this, arNumRange)
+public fun Long.toArString(): String = convertNums(this, arNumRange)
 
 /**
  * Converts a [Long] to a [String] of Persian digits.
  * @return a [String] which contains Persian numerical digits.
  */
-fun Long.toFaString(): String = convertNums(this, faNumRange)
+public fun Long.toFaString(): String = convertNums(this, faNumRange)

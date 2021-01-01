@@ -8,6 +8,6 @@
 
 package dev.yekta.anynum
 
-val enNumRange = 48..57
-val arNumRange = 1632..1641
-val faNumRange = 1776..1785
+internal val enNumRange = 48..57
+internal val arNumRange = 1632..1641
+internal val faNumRange = 1776..1785

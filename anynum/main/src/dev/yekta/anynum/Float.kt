@@ -12,10 +12,10 @@ package dev.yekta.anynum
  * Converts a [Float] to a [String] of Arabic digits.
  * @return a [String] which contains Arabic numerical digits.
  */
-fun Float.toArString(): String = this.toString().numEnToAr()
+public fun Float.toArString(): String = this.toString().numEnToAr()
 
 /**
  * Converts a [Float] to a [String] of Persian digits.
  * @return a [String] which contains Persian numerical digits.
  */
-fun Float.toFaString(): String = this.toString().numEnToFa()
+public fun Float.toFaString(): String = this.toString().numEnToFa()
