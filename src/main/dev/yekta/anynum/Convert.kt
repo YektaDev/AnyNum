@@ -15,8 +15,20 @@ internal fun convertNums(num: Long, toRange: IntRange): String {
     var result = ""
     val difference = toRange.first - enNumRange.first
 
-    for (c in num.toString())
-        result += (c.toInt() + difference).toChar()
+    if (num >= 0) {
+        val numStr = num.toString()
+
+        for (c in numStr) {
+            result += (c.toInt() + difference).toChar()
+        }
+    } else {
+        val numStr = (num * -1).toString()
+        result += '-'
+
+        for (c in numStr) {
+            result += (c.toInt() + difference).toChar()
+        }
+    }
 
     return result
 }
