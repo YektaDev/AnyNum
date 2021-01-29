@@ -9,7 +9,6 @@ internal const val INDEX_NUMBERS_EN = 0
 internal const val INDEX_NUMBERS_AR = 1
 internal const val INDEX_NUMBERS_FA = 2
 
-
 internal val strings = listOf(
     listOf(
         "", // [0] -> Mixed numbers   (INDEX_STRINGS_MX)
@@ -74,34 +73,34 @@ internal val strings = listOf(
 )
 
 internal val numbers = listOf(
-    0L to listOf(
-        "0", // [0] -> English number  (INDEX_NUMBERS_EN)
+    0.toByte() to listOf(
+        "0", // [0] -> English number (INDEX_NUMBERS_EN)
         "٠", // [1] -> Arabic number  (INDEX_NUMBERS_AR)
         "۰", // [2] -> Persian number (INDEX_NUMBERS_FA)
     ),
-    1L to listOf(
-        "1",
-        "١",
-        "۱",
+    12.toByte() to listOf(
+        "12",
+        "١٢",
+        "۱۲",
     ),
-    9223372036854775807L to listOf(
-        "9223372036854775807",
-        "٩٢٢٣٣٧٢٠٣٦٨٥٤٧٧٥٨٠٧",
-        "۹۲۲۳۳۷۲۰۳۶۸۵۴۷۷۵۸۰۷",
+    34.toByte() to listOf(
+        "34",
+        "٣٤",
+        "۳۴",
     ),
-    -9223372036854775806L to listOf(
-        "-9223372036854775806",
-        "-٩٢٢٣٣٧٢٠٣٦٨٥٤٧٧٥٨٠٦",
-        "-۹۲۲۳۳۷۲۰۳۶۸۵۴۷۷۵۸۰۶",
+    56.toByte() to listOf(
+        "56",
+        "٥٦",
+        "۵۶",
     ),
-    1234567890L to listOf(
-        "1234567890",
-        "١٢٣٤٥٦٧٨٩٠",
-        "۱۲۳۴۵۶۷۸۹۰",
+    78.toByte() to listOf(
+        "78",
+        "٧٨",
+        "۷۸",
     ),
-    -1234567890L to listOf(
-        "-1234567890",
-        "-١٢٣٤٥٦٧٨٩٠",
-        "-۱۲۳۴۵۶۷۸۹۰",
+    99.toByte() to listOf(
+        "99",
+        "٩٩",
+        "۹۹",
     ),
 )
