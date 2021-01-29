@@ -21,14 +21,14 @@ class StringTest {
     }
 
     @Test
-    fun checkStringNumToAr() {
+    fun testStringNumToAr() {
         strings.forEach { stringList ->
             assertEquals(stringList[INDEX_AR], stringList[INDEX_MIXED].numToAr())
         }
     }
 
     @Test
-    fun checkStringNumToFa() {
+    fun testStringNumToFa() {
         strings.forEach { stringList ->
             assertEquals(stringList[INDEX_FA], stringList[INDEX_MIXED].numToFa())
         }
@@ -36,14 +36,14 @@ class StringTest {
 
     // Test numEnToX functions
     @Test
-    fun checkStringNumEnToAr() {
+    fun testStringNumEnToAr() {
         strings.forEach { stringList ->
             assertEquals(stringList[INDEX_AR], stringList[INDEX_EN].numEnToAr())
         }
     }
 
     @Test
-    fun checkStringNumEnToFa() {
+    fun testStringNumEnToFa() {
         strings.forEach { stringList ->
             assertEquals(stringList[INDEX_FA], stringList[INDEX_EN].numEnToFa())
         }
@@ -51,14 +51,14 @@ class StringTest {
 
     // Test numArToX functions
     @Test
-    fun checkStringNumArToEn() {
+    fun testStringNumArToEn() {
         strings.forEach { stringList ->
             assertEquals(stringList[INDEX_EN], stringList[INDEX_AR].numArToEn())
         }
     }
 
     @Test
-    fun checkStringNumArToFa() {
+    fun testStringNumArToFa() {
         strings.forEach { stringList ->
             assertEquals(stringList[INDEX_FA], stringList[INDEX_AR].numArToFa())
         }
@@ -66,14 +66,14 @@ class StringTest {
 
     // Test numFaToX functions
     @Test
-    fun checkStringNumFaToEn() {
+    fun testStringNumFaToEn() {
         strings.forEach { stringList ->
             assertEquals(stringList[INDEX_EN], stringList[INDEX_FA].numFaToEn())
         }
     }
 
     @Test
-    fun checkStringNumFaToAr() {
+    fun testStringNumFaToAr() {
         strings.forEach { stringList ->
             assertEquals(stringList[INDEX_AR], stringList[INDEX_FA].numFaToAr())
         }
