@@ -1,3 +1,5 @@
+rootProject.name = "AnyNum"
+
 pluginManagement {
     repositories {
         maven("https://dl.bintray.com/kotlin/kotlin-eap")
@@ -5,5 +7,3 @@ pluginManagement {
         maven("https://plugins.gradle.org/m2/")
     }
 }
-//rootProject.name = "AnyNum"
-//rootProject.projectDir = file("/src")
