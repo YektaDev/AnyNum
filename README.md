@@ -11,7 +11,7 @@ Add the **JitPack** repository in your root `build.gradle` at the end of reposit
 ``` groovy
 allprojects {
     repositories {
-        //Other repositories...
+        // Other repositories...
         maven { url 'https://jitpack.io' }
     }
 }
