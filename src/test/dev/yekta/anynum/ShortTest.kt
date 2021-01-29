@@ -12,12 +12,12 @@ import org.junit.jupiter.api.Test
 
 class ShortTest() {
     @Test
-    fun checkShortToArString() {
+    fun testShortToArString() {
         // TODO: Implement the function
     }
 
     @Test
-    fun checkShortToFaString() {
+    fun testShortToFaString() {
         // TODO: Implement the function
     }
 }

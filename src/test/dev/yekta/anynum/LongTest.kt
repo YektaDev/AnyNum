@@ -12,12 +12,12 @@ import org.junit.jupiter.api.Test
 
 class LongTest() {
     @Test
-    fun checkLongToArString() {
+    fun testLongToArString() {
         // TODO: Implement the function
     }
 
     @Test
-    fun checkLongToFaString() {
+    fun testLongToFaString() {
         // TODO: Implement the function
     }
 }

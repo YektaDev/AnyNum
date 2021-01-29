@@ -12,12 +12,12 @@ import org.junit.jupiter.api.Test
 
 class FloatTest() {
     @Test
-    fun checkFloatToArString() {
+    fun testFloatToArString() {
         // TODO: Implement the function
     }
 
     @Test
-    fun checkFloatToFaString() {
+    fun testFloatToFaString() {
         // TODO: Implement the function
     }
 }

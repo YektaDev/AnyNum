@@ -12,12 +12,12 @@ import org.junit.jupiter.api.Test
 
 class IntTest() {
     @Test
-    fun checkIntToArString() {
+    fun testIntToArString() {
         // TODO: Implement the function
     }
 
     @Test
-    fun checkIntToFaString() {
+    fun testIntToFaString() {
         // TODO: Implement the function
     }
 }

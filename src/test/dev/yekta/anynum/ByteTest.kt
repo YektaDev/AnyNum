@@ -12,12 +12,12 @@ import org.junit.jupiter.api.Test
 
 class ByteTest() {
     @Test
-    fun checkByteToArString() {
+    fun testByteToArString() {
         // TODO: Implement the function
     }
 
     @Test
-    fun checkByteToFaString() {
+    fun testByteToFaString() {
         // TODO: Implement the function
     }
 }

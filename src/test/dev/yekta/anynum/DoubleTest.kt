@@ -12,12 +12,12 @@ import org.junit.jupiter.api.Test
 
 class DoubleTest() {
     @Test
-    fun checkDoubleToArString() {
+    fun testDoubleToArString() {
         // TODO: Implement the function
     }
 
     @Test
-    fun checkDoubleToFaString() {
+    fun testDoubleToFaString() {
         // TODO: Implement the function
     }
 }
