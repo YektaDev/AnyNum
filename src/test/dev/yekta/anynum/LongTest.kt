@@ -10,7 +10,7 @@ package dev.yekta.anynum
 
 import org.junit.jupiter.api.Test
 
-class LongTest() {
+class LongTest {
     @Test
     fun testLongToArString() {
         // TODO: Implement the function

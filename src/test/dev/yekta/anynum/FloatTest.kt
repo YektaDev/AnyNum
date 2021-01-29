@@ -10,7 +10,7 @@ package dev.yekta.anynum
 
 import org.junit.jupiter.api.Test
 
-class FloatTest() {
+class FloatTest {
     @Test
     fun testFloatToArString() {
         // TODO: Implement the function
