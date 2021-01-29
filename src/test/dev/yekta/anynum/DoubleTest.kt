@@ -6,18 +6,18 @@
  * Email: Me@Yekta.Dev
  */
 
-package dev.yekta.anynum.test
+package dev.yekta.anynum
 
 import org.junit.jupiter.api.Test
 
-class IntTest() {
+class DoubleTest() {
     @Test
-    fun checkIntToArString() {
+    fun checkDoubleToArString() {
         // TODO: Implement the function
     }
 
     @Test
-    fun checkIntToFaString() {
+    fun checkDoubleToFaString() {
         // TODO: Implement the function
     }
 }

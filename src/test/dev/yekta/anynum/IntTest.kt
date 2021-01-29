@@ -6,18 +6,18 @@
  * Email: Me@Yekta.Dev
  */
 
-package dev.yekta.anynum.test
+package dev.yekta.anynum
 
 import org.junit.jupiter.api.Test
 
-class FloatTest() {
+class IntTest() {
     @Test
-    fun checkFloatToArString() {
+    fun checkIntToArString() {
         // TODO: Implement the function
     }
 
     @Test
-    fun checkFloatToFaString() {
+    fun checkIntToFaString() {
         // TODO: Implement the function
     }
 }

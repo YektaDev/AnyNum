@@ -6,19 +6,24 @@
  * Email: Me@Yekta.Dev
  */
 
-package dev.yekta.anynum.test
+package dev.yekta.anynum
 
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class StringTest() {
+class StringTest {
     @Test
-    fun checkStringNumToEn() {
-        // TODO: Implement the function
+    fun testStringNumToEn() {
+        strings.forEach { stringList ->
+            assertEquals(stringList[INDEX_EN], stringList[INDEX_MIXED].numToEn())
+        }
     }
 
     @Test
-    fun checkStringNumToAr() {
-        // TODO: Implement the function
+    fun checkStringNumToAr() {/*
+        strings.forEach { stringList ->
+            assertEquals(stringList[INDEX_MIXED].numToEn(), stringList[INDEX_AR])
+        }*/
     }
 
     @Test

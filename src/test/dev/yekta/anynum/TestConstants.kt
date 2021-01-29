@@ -1,6 +1,11 @@
-package dev.yekta.anynum.test
+package dev.yekta.anynum
 
-val strings = listOf(
+internal const val INDEX_MIXED = 0
+internal const val INDEX_EN = 1
+internal const val INDEX_AR = 2
+internal const val INDEX_FA = 3
+
+internal val strings = listOf(
     listOf(
         "", // [0] -> Mixed numbers
         "", // [1] -> English numbers

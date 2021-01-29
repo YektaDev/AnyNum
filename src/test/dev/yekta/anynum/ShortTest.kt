@@ -6,18 +6,18 @@
  * Email: Me@Yekta.Dev
  */
 
-package dev.yekta.anynum.test
+package dev.yekta.anynum
 
 import org.junit.jupiter.api.Test
 
-class ByteTest() {
+class ShortTest() {
     @Test
-    fun checkByteToArString() {
+    fun checkShortToArString() {
         // TODO: Implement the function
     }
 
     @Test
-    fun checkByteToFaString() {
+    fun checkShortToFaString() {
         // TODO: Implement the function
     }
 }
