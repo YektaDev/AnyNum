@@ -10,16 +10,16 @@ A set of Kotlin extension functions to **convert/generate** *English*, *Persian*
 Add the **JitPack** repository in your root `build.gradle` at the end of repositories (if it doesn't exist):
 ``` groovy
 allprojects {
-	repositories {
-		//Other repositories...
-		maven { url 'https://jitpack.io' }
-	}
+    repositories {
+        //Other repositories...
+        maven { url 'https://jitpack.io' }
+    }
 }
 ```
 ### Step 2
 Add the **dependency**:
 ``` groovy
 dependencies {
-  implementation 'com.github.YektaDev:AnyNum:-SNAPSHOT'
+    implementation 'com.github.YektaDev:AnyNum:-SNAPSHOT'
 }
 ```
