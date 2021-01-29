@@ -5,8 +5,9 @@ internal const val INDEX_STRINGS_EN = 1
 internal const val INDEX_STRINGS_AR = 2
 internal const val INDEX_STRINGS_FA = 3
 
-internal const val INDEX_NUMBERS_AR = 0
-internal const val INDEX_NUMBERS_FA = 1
+internal const val INDEX_NUMBERS_EN = 0
+internal const val INDEX_NUMBERS_AR = 1
+internal const val INDEX_NUMBERS_FA = 2
 
 
 internal val strings = listOf(
@@ -74,26 +75,32 @@ internal val strings = listOf(
 
 internal val numbers = listOf(
     0L to listOf(
-        "٠", // [0] -> Arabic numbers  (INDEX_NUMBERS_AR)
-        "۰", // [1] -> Persian numbers (INDEX_NUMBERS_FA)
+        "0", // [0] -> English number  (INDEX_NUMBERS_EN)
+        "٠", // [1] -> Arabic number  (INDEX_NUMBERS_AR)
+        "۰", // [2] -> Persian number (INDEX_NUMBERS_FA)
     ),
     1L to listOf(
+        "1",
         "١",
         "۱",
     ),
     9223372036854775807L to listOf(
+        "9223372036854775807",
         "٩٢٢٣٣٧٢٠٣٦٨٥٤٧٧٥٨٠٧",
         "۹۲۲۳۳۷۲۰۳۶۸۵۴۷۷۵۸۰۷",
     ),
     -9223372036854775806L to listOf(
+        "-9223372036854775806",
         "-٩٢٢٣٣٧٢٠٣٦٨٥٤٧٧٥٨٠٦",
         "-۹۲۲۳۳۷۲۰۳۶۸۵۴۷۷۵۸۰۶",
     ),
     1234567890L to listOf(
+        "1234567890",
         "١٢٣٤٥٦٧٨٩٠",
         "۱۲۳۴۵۶۷۸۹۰",
     ),
     -1234567890L to listOf(
+        "-1234567890",
         "-١٢٣٤٥٦٧٨٩٠",
         "-۱۲۳۴۵۶۷۸۹۰",
     ),
