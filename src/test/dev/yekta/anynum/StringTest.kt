@@ -12,6 +12,7 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 class StringTest {
+    // Test numToX functions
     @Test
     fun testStringNumToEn() {
         strings.forEach { stringList ->
@@ -20,44 +21,61 @@ class StringTest {
     }
 
     @Test
-    fun checkStringNumToAr() {/*
+    fun checkStringNumToAr() {
         strings.forEach { stringList ->
-            assertEquals(stringList[INDEX_MIXED].numToEn(), stringList[INDEX_AR])
-        }*/
+            assertEquals(stringList[INDEX_AR], stringList[INDEX_MIXED].numToAr())
+        }
     }
 
     @Test
     fun checkStringNumToFa() {
-        // TODO: Implement the function
+        strings.forEach { stringList ->
+            assertEquals(stringList[INDEX_FA], stringList[INDEX_MIXED].numToFa())
+        }
     }
 
+    // Test numEnToX functions
     @Test
     fun checkStringNumEnToAr() {
-        // TODO: Implement the function
+        strings.forEach { stringList ->
+            assertEquals(stringList[INDEX_AR], stringList[INDEX_EN].numEnToAr())
+        }
     }
 
     @Test
     fun checkStringNumEnToFa() {
-        // TODO: Implement the function
+        strings.forEach { stringList ->
+            assertEquals(stringList[INDEX_FA], stringList[INDEX_EN].numEnToFa())
+        }
     }
 
+    // Test numArToX functions
     @Test
     fun checkStringNumArToEn() {
-        // TODO: Implement the function
+        strings.forEach { stringList ->
+            assertEquals(stringList[INDEX_EN], stringList[INDEX_AR].numArToEn())
+        }
     }
 
     @Test
     fun checkStringNumArToFa() {
-        // TODO: Implement the function
+        strings.forEach { stringList ->
+            assertEquals(stringList[INDEX_FA], stringList[INDEX_AR].numArToFa())
+        }
     }
 
+    // Test numFaToX functions
     @Test
     fun checkStringNumFaToEn() {
-        // TODO: Implement the function
+        strings.forEach { stringList ->
+            assertEquals(stringList[INDEX_EN], stringList[INDEX_FA].numFaToEn())
+        }
     }
 
     @Test
     fun checkStringNumFaToAr() {
-        // TODO: Implement the function
+        strings.forEach { stringList ->
+            assertEquals(stringList[INDEX_AR], stringList[INDEX_FA].numFaToAr())
+        }
     }
 }
