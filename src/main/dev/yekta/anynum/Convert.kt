@@ -18,13 +18,13 @@ internal val faNumRange = 1776..1785
 internal fun convertNums(num: Long, toRange: IntRange): String {
     val difference = toRange.first - enNumRange.first
     val numStr = if (num >= 0) num.toString() else (num * -1).toString()
-    var result = if (num >= 0) "" else "-"
+    val result = if (num >= 0) StringBuilder() else StringBuilder("-")
 
     numStr.forEach {
-        result += (it.toInt() + difference).toChar()
+        result.append((it.toInt() + difference).toChar())
     }
 
-    return result
+    return result.toString()
 }
 
 /**
@@ -32,13 +32,14 @@ internal fun convertNums(num: Long, toRange: IntRange): String {
  */
 internal fun convertNums(str: String, fromRange: IntRange, toRange: IntRange): String {
     val difference = toRange.first - fromRange.first
-    var result = ""
+    val result = StringBuilder()
 
     str.forEach {
-        result +=
+        result.append(
             if (it.toInt() !in fromRange) it
             else (it.toInt() + difference).toChar()
+        )
     }
 
-    return result
+    return result.toString()
 }
