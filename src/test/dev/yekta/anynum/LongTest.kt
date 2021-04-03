@@ -13,22 +13,8 @@ import org.junit.jupiter.api.Test
 
 class LongTest {
     @Test
-    fun testLongToArString() {
-        numbers.forEach { longStringListPair ->
-            val long = longStringListPair.first
-            val expectedStr = longStringListPair.second[INDEX_NUMBERS_FA]
-
-            Assertions.assertEquals(expectedStr, long.toFaString())
-        }
-    }
+    fun testLongToArString() = numCases.forEach { Assertions.assertEquals(it.arNum, it.long.toArString()) }
 
     @Test
-    fun testLongToFaString() {
-        numbers.forEach { longStringListPair ->
-            val long = longStringListPair.first
-            val expectedStr = longStringListPair.second[INDEX_NUMBERS_FA]
-
-            Assertions.assertEquals(expectedStr, long.toFaString())
-        }
-    }
+    fun testLongToFaString() = numCases.forEach { Assertions.assertEquals(it.faNum, it.long.toFaString()) }
 }

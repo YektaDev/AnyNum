@@ -8,16 +8,15 @@
 
 package dev.yekta.anynum
 
+import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
 class FloatTest {
     @Test
-    fun testFloatToArString() {
-        // TODO: Implement the function
-    }
+    fun testFloatToArString() =
+        numCases.forEach { Assertions.assertEquals(it.arNum + arDecimalSuffix, it.long.toFloat().toArString()) }
 
     @Test
-    fun testFloatToFaString() {
-        // TODO: Implement the function
-    }
+    fun testFloatToFaString() =
+        numCases.forEach { Assertions.assertEquals(it.faNum + faDecimalSuffix, it.long.toFloat().toFaString()) }
 }

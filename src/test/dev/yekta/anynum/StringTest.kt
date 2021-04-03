@@ -14,68 +14,32 @@ import org.junit.jupiter.api.Test
 class StringTest {
     // Test numToX functions
     @Test
-    fun testStringNumToEn() {
-        strings.forEach { stringList ->
-            assertEquals(stringList[INDEX_STRINGS_EN], stringList[INDEX_STRINGS_MX].numToEn())
-        }
-    }
+    fun testStringNumToEn() = strCases.forEach { assertEquals(it.en, it.mixed.numToEn()) }
 
     @Test
-    fun testStringNumToAr() {
-        strings.forEach { stringList ->
-            assertEquals(stringList[INDEX_STRINGS_AR], stringList[INDEX_STRINGS_MX].numToAr())
-        }
-    }
+    fun testStringNumToAr() = strCases.forEach { assertEquals(it.ar, it.mixed.numToAr()) }
 
     @Test
-    fun testStringNumToFa() {
-        strings.forEach { stringList ->
-            assertEquals(stringList[INDEX_STRINGS_FA], stringList[INDEX_STRINGS_MX].numToFa())
-        }
-    }
+    fun testStringNumToFa() = strCases.forEach { assertEquals(it.fa, it.mixed.numToFa()) }
 
     // Test numEnToX functions
     @Test
-    fun testStringNumEnToAr() {
-        strings.forEach { stringList ->
-            assertEquals(stringList[INDEX_STRINGS_AR], stringList[INDEX_STRINGS_EN].numEnToAr())
-        }
-    }
+    fun testStringNumEnToAr() = strCases.forEach { assertEquals(it.ar, it.en.numEnToAr()) }
 
     @Test
-    fun testStringNumEnToFa() {
-        strings.forEach { stringList ->
-            assertEquals(stringList[INDEX_STRINGS_FA], stringList[INDEX_STRINGS_EN].numEnToFa())
-        }
-    }
+    fun testStringNumEnToFa() = strCases.forEach { assertEquals(it.fa, it.en.numEnToFa()) }
 
     // Test numArToX functions
     @Test
-    fun testStringNumArToEn() {
-        strings.forEach { stringList ->
-            assertEquals(stringList[INDEX_STRINGS_EN], stringList[INDEX_STRINGS_AR].numArToEn())
-        }
-    }
+    fun testStringNumArToEn() = strCases.forEach { assertEquals(it.en, it.ar.numArToEn()) }
 
     @Test
-    fun testStringNumArToFa() {
-        strings.forEach { stringList ->
-            assertEquals(stringList[INDEX_STRINGS_FA], stringList[INDEX_STRINGS_AR].numArToFa())
-        }
-    }
+    fun testStringNumArToFa() = strCases.forEach { assertEquals(it.fa, it.ar.numArToFa()) }
 
     // Test numFaToX functions
     @Test
-    fun testStringNumFaToEn() {
-        strings.forEach { stringList ->
-            assertEquals(stringList[INDEX_STRINGS_EN], stringList[INDEX_STRINGS_FA].numFaToEn())
-        }
-    }
+    fun testStringNumFaToEn() = strCases.forEach { assertEquals(it.en, it.fa.numFaToEn()) }
 
     @Test
-    fun testStringNumFaToAr() {
-        strings.forEach { stringList ->
-            assertEquals(stringList[INDEX_STRINGS_AR], stringList[INDEX_STRINGS_FA].numFaToAr())
-        }
-    }
+    fun testStringNumFaToAr() = strCases.forEach { assertEquals(it.ar, it.fa.numFaToAr()) }
 }

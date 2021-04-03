@@ -8,16 +8,15 @@
 
 package dev.yekta.anynum
 
+import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
 class DoubleTest {
     @Test
-    fun testDoubleToArString() {
-        // TODO: Implement the function
-    }
+    fun testDoubleToArString() =
+        numCases.forEach { Assertions.assertEquals(it.arNum + arDecimalSuffix, it.long.toDouble().toArString()) }
 
     @Test
-    fun testDoubleToFaString() {
-        // TODO: Implement the function
-    }
+    fun testDoubleToFaString() =
+        numCases.forEach { Assertions.assertEquals(it.faNum + faDecimalSuffix, it.long.toDouble().toFaString()) }
 }

@@ -8,16 +8,13 @@
 
 package dev.yekta.anynum
 
+import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
 class ShortTest {
     @Test
-    fun testShortToArString() {
-        // TODO: Implement the function
-    }
+    fun testShortToArString() = numCases.forEach { Assertions.assertEquals(it.arNum, it.long.toShort().toArString()) }
 
     @Test
-    fun testShortToFaString() {
-        // TODO: Implement the function
-    }
+    fun testShortToFaString() = numCases.forEach { Assertions.assertEquals(it.faNum, it.long.toShort().toFaString()) }
 }
