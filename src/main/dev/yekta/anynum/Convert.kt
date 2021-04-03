@@ -8,6 +8,10 @@
 
 package dev.yekta.anynum
 
+internal val enNumRange = 48..57
+internal val arNumRange = 1632..1641
+internal val faNumRange = 1776..1785
+
 /**
  * Converts digits of [num] to digits of another language.
  */
