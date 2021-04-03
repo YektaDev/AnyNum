@@ -1,9 +1,15 @@
-[![License](https://img.shields.io/static/v1?label=License&message=Apache-2.0&color=43A047)](https://github.com/YektaDev/AnyNum/blob/main/LICENSE)
-[![PoweredBy](https://img.shields.io/static/v1?label=Powered%20By&message=Electricity&color=FB8C00)](https://en.wikipedia.org/wiki/Electricity)
-[![MadeWith](https://img.shields.io/static/v1?label=Made%20With&message=Kotlin&color=D81B60)](https://github.com/JetBrains/kotlin)
+<p align="center"><img src="res/AnyNum.svg" width="400" alt="AnyNum"></p>
 
-# AnyNum
-A set of Kotlin extension functions to **convert/generate** *English*, *Persian*, and *Arabic* digits with ease. 
+<p align="center">A set of Kotlin extension functions to convert/generate <strong>English</strong>, <strong>Persian</strong>, and <strong>Arabic</strong> digits with ease.</p>
+
+<p align="center">
+    <a href="https://github.com/YektaDev/AnyNum/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/static/v1?label=License&message=Apache-2.0&color=43A047"></a>
+    <a href="https://en.wikipedia.org/wiki/Electricity"><img alt="Powered By" src="https://img.shields.io/static/v1?label=Powered%20By&message=Electricity&color=FB8C00"></a>
+    <a href="https://github.com/JetBrains/kotlin"><img alt="Made With" src="https://img.shields.io/static/v1?label=Made%20With&message=Kotlin&color=D81B60"></a>
+</p>
+
+
+ 
 
 ## Dependency
 ### Step 1
