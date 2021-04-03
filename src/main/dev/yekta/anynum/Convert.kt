@@ -12,22 +12,12 @@ package dev.yekta.anynum
  * Converts digits of [num] to digits of another language.
  */
 internal fun convertNums(num: Long, toRange: IntRange): String {
-    var result = ""
     val difference = toRange.first - enNumRange.first
+    val numStr = if (num >= 0) num.toString() else (num * -1).toString()
+    var result = if (num >= 0) "" else "-"
 
-    if (num >= 0) {
-        val numStr = num.toString()
-
-        for (c in numStr) {
-            result += (c.toInt() + difference).toChar()
-        }
-    } else {
-        val numStr = (num * -1).toString()
-        result += '-'
-
-        for (c in numStr) {
-            result += (c.toInt() + difference).toChar()
-        }
+    numStr.forEach {
+        result += (it.toInt() + difference).toChar()
     }
 
     return result
@@ -37,14 +27,14 @@ internal fun convertNums(num: Long, toRange: IntRange): String {
  * Converts digits of [str] to digits of another language.
  */
 internal fun convertNums(str: String, fromRange: IntRange, toRange: IntRange): String {
-    var result = ""
     val difference = toRange.first - fromRange.first
+    var result = ""
 
-    for (c in str)
-        result += if (c.toInt() !in fromRange)
-            c
-        else
-            (c.toInt() + difference).toChar()
+    str.forEach {
+        result +=
+            if (it.toInt() !in fromRange) it
+            else (it.toInt() + difference).toChar()
+    }
 
     return result
 }
