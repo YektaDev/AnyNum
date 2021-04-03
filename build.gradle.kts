@@ -1,12 +1,10 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
-val compileKotlin: KotlinCompile by tasks
-val compileTestKotlin: KotlinCompile by tasks
+group = "dev.yekta"
+version = "0.1.0"
 
 plugins {
-    java
-    kotlin("jvm") version "1.4.30-RC"
     application
+    kotlin("jvm") version "1.4.32"
+    java
 }
 
 repositories {
@@ -15,39 +13,27 @@ repositories {
 }
 
 sourceSets {
-    main {
-        java {
-            setSrcDirs(listOf("src/main"))
-        }
-    }
-
-    test {
-        java {
-            setSrcDirs(listOf("src/test"))
-        }
-    }
+    main { java.srcDirs("src/main") }
+    test { java.srcDirs("src/test") }
 }
 
 dependencies {
-    constraints {
-        implementation("org.apache.commons:commons-text:1.9")
-    }
-
     implementation(kotlin("stdlib-jdk8"))
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.2")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
-    testImplementation(kotlin("reflect"))
 }
 
-tasks.test {
-    useJUnitPlatform()
-}
+tasks {
+    withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile::class).all {
+        kotlinOptions {
+            jvmTarget = "1.8"
+            allWarningsAsErrors = true
+            useIR = true
+        }
+    }
 
-compileKotlin.kotlinOptions {
-    jvmTarget = "1.8"
-}
-
-compileTestKotlin.kotlinOptions {
-    jvmTarget = "1.8"
+    test {
+        useJUnitPlatform()
+    }
 }
