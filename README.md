@@ -12,6 +12,7 @@
  
 
 ## Dependency
+#### Note: AnyNum is now stable and ready to use, but is still in the proccess of being published.
 ### Step 1
 Add the **JitPack** repository in your root `build.gradle` at the end of repositories (if it doesn't exist):
 ``` groovy
