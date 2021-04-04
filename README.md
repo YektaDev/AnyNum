@@ -8,9 +8,6 @@
     <a href="https://github.com/JetBrains/kotlin"><img alt="Made With" src="https://img.shields.io/static/v1?label=Made%20With&message=Kotlin&color=D81B60"></a>
 </p>
 
-
- 
-
 ## Dependency
 #### Note: AnyNum is now stable and ready to use, but is still in the proccess of being published.
 ### Step 1
@@ -30,3 +27,31 @@ dependencies {
     implementation 'com.github.YektaDev:AnyNum:-SNAPSHOT'
 }
 ```
+## Common Usages
+##### AnyNum contains below functions:
+
+`Number.toArString()`: **Generates Arabic digits.**
+
+`Number.toFaString()`: **Generates Persian digits.**
+
+`String.numToEn()`: **Convertes Arabic & Persian digits to English.**
+
+`String.numToAr()`: **Convertes English & Persian digits to Arabic.**
+
+`String.numToFa()`: **Convertes English & Arabic digits to Persian.**
+
+**Note:** a Number can be `Byte`, `Short`, `Int`, `Long`, `Float`, or `Double`.
+
+## Other Usages
+
+`String.numArToEn()`: Convertes Arabic digits to English.
+
+`String.numFaToEn()`: Convertes Persian digits to English.
+
+`String.numEnToAr()`: Convertes English digits to Arabic.
+
+`String.numFaToAr()`: Convertes Persian digits to Arabic.
+
+`String.numEnToFa()`: Convertes English digits to Persian.
+
+`String.numArToFa()`: Convertes Arabic digits to Persian.
