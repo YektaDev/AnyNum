@@ -40,7 +40,7 @@ dependencies {
 
 `String.numToFa()`: **Convertes English & Arabic digits to Persian.**
 
-**Note:** a Number can be `Byte`, `Short`, `Int`, `Long`, `Float`, or `Double`.
+**Note:** a `Number` can be `Byte`, `Short`, `Int`, `Long`, `Float`, or `Double`.
 
 ## Other Usages
 
