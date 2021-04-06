@@ -1,9 +1,10 @@
 group = "dev.yekta"
-version = "1.0.0"
+version = "1.0.2"
 
 plugins {
     kotlin("jvm") version "1.4.32"
     `maven-publish`
+    `java-library`
 }
 
 java {
@@ -65,7 +66,8 @@ publishing {
                     }
                 }
                 scm {
-                    connection.set("scm:git:https://github.com/YektaDev/AnyNum.git")
+                    connection.set("scm:git:ssh://git@github.com:YektaDev/AnyNum.git")
+                    developerConnection.set("scm:git:ssh://git@github.com:YektaDev/AnyNum.git")
                     url.set("https://github.com/YektaDev/AnyNum")
                 }
             }
