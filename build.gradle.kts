@@ -2,7 +2,6 @@ group = "dev.yekta"
 version = "1.0.0"
 
 plugins {
-    application
     kotlin("jvm") version "1.4.32"
     java
 }
