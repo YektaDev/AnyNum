@@ -9,7 +9,7 @@
 </p>
 
 ## Dependency
-#### Note: AnyNum is now stable and ready to use, but is still in the proccess of being published.
+#### Note: AnyNum is now stable and ready; however, I wasn't able to properly configure the gradle file in order to make the library accessible via JitPack. Any contribution would be highly appreciated.
 ### Step 1
 Add the **JitPack** repository in your root `build.gradle` at the end of repositories (if it doesn't exist):
 ``` groovy
