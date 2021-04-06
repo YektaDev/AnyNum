@@ -45,7 +45,7 @@ tasks {
 publishing {
     publications {
         create<MavenPublication>("mavenJava") {
-            artifactId = "AnyNum"
+            artifactId = "anynum"
 
             pom {
                 name.set("AnyNum")

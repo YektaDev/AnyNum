@@ -1,4 +1,4 @@
-rootProject.name = "AnyNum"
+rootProject.name = "anynum"
 
 pluginManagement {
     repositories {
