@@ -3,7 +3,12 @@ version = "1.0.0"
 
 plugins {
     kotlin("jvm") version "1.4.32"
-    java
+    `maven-publish`
+}
+
+java {
+    withJavadocJar()
+    withSourcesJar()
 }
 
 repositories {
@@ -34,5 +39,36 @@ tasks {
 
     test {
         useJUnitPlatform()
+    }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("mavenJava") {
+            artifactId = "AnyNum"
+
+            pom {
+                name.set("AnyNum")
+                description.set("Kotlin extensions to convert/generate English, Persian, and Arabic digits with ease.")
+                url.set("https://github.com/YektaDev/AnyNum")
+                licenses {
+                    license {
+                        name.set("The Apache License, Version 2.0")
+                        url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                    }
+                }
+                developers {
+                    developer {
+                        id.set("YektaDev")
+                        name.set("Ali Khaleqi Yekta")
+                        email.set("Me@Yekta.Dev")
+                    }
+                }
+                scm {
+                    connection.set("scm:git:https://github.com/YektaDev/AnyNum.git")
+                    url.set("https://github.com/YektaDev/AnyNum")
+                }
+            }
+        }
     }
 }
