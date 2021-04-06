@@ -6,6 +6,8 @@
  * Email: Me@Yekta.Dev
  */
 
+@file:Suppress("RedundantVisibilityModifier")
+
 package dev.yekta.anynum
 
 /**
